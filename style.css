@@ -1,0 +1,154 @@
+
+html{
+ margin:0;
+ padding:0;
+ min-height: 100%;
+}
+
+body{
+	height: 100%;
+	margin:0;
+	padding: 0;
+	background-image: url("images/bgphoto.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-wrap{
+	background: white;
+}
+
+.navbar-brand{
+	font-size:18px;
+	font-weight: 600;
+}
+
+.navbar{
+	border-bottom: 1px solid white;
+}
+
+.fa-bars{
+	color: white;
+	font-size:40px;
+}
+
+.topmenuitem{
+	color: white;
+	font-size: 20px;
+	margin-left: 25px;
+	font-weight: 550;
+	margin-right: 0;
+
+}
+
+h3{
+	color:white;
+	font-family: 'Lobster', cursive ;
+	font-size: 35px;
+}
+
+h4{
+	color: white;
+	font-size: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+.pageText{
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.row{
+
+}
+
+.borderTop{
+	border-top: 1px solid white;
+}
+
+.borderSides{
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+
+.borderFooter{
+	border-right: 1px solid #8f8674;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.fa-mobile-alt, .fa-at{
+	color: white;
+	font-size: 40px;
+}
+
+.contactsText{
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.page-footer{
+	background-color: white;
+}
+
+.footerFont{
+	color: #8f8674;
+	font-family: 'Oswald', serif;
+	font-size: 20px;
+}
+
+.footerFontBig{
+	color: #8f8674;
+	font-family: 'Oswald', serif;
+	font-size: 30px;
+}
+
+.footer-content{
+	border-bottom: 1px solid #8f8674;
+	padding-bottom: 25px;
+}
+
+.labelsForFooter{
+	color: #8f8674;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+.labelsForContact{
+	color: #8f8674;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.contactText{
+	color:#8f8674;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.aboutUsField{
+	border-radius: 25px;
+	background:white;
+}
+
+.aboutUsHeader{
+	color: #8f8674;
+	font-family: 'Lobster', cursive ;
+	font-size: 35px;
+}
+
+.aboutUsParagraph{
+	color:#8f8674;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
