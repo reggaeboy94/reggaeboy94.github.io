@@ -57,17 +57,9 @@ h4{
 
 .pageText{
 	color:white;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-}
-
-.row{
-
-}
-
-.borderTop{
-	border-top: 1px solid white;
 }
 
 .borderSides{
@@ -75,6 +67,9 @@ h4{
 	border-left: 1px solid white;
 }
 
+.welcomeDiv{
+	text-align: center;
+}
 
 .borderFooter{
 	border-right: 1px solid #8f8674;
@@ -86,7 +81,7 @@ ul{
 
 .fa-mobile-alt, .fa-at{
 	color: white;
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .contactsText{
@@ -159,3 +154,33 @@ position:absolute;
 bottom:0;
 width: 100%;
 }
+
+.btn{
+	color:white;
+	background-color: #8f8674;
+	border-radius: 30px;
+	font-family: 'Lobster';
+	font-size: 17px;
+}
+
+.pictures{
+	list-style: none;
+}
+
+.roundabout-holder{
+	height:400px;
+}
+
+.roundabout-moveable-item {
+	height: 200px;
+	width: 200px;
+	cursor: pointer;
+}
+   
+
+
+
+
+
+
+

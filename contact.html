@@ -29,7 +29,7 @@
 	      		 		<a class="nav-link" href="aboutUs.html"><span class="topmenuitem">O nas</span></a>
 	   		 	    </li>
 	 		   	    <li class="nav-item active">
-	      		    <a class="nav-link" href="contacts.html"><span class="topmenuitem">Kontakt</span></a>
+	      		    <a class="nav-link" href="contact.html"><span class="topmenuitem">Kontakt</span></a>
 	     		 	</li>
 	   		    </ul>
 	   		</div>	 
@@ -58,19 +58,24 @@
 
  		<div class="col-md-4 ml-auto mb-5">
  					<h3 class="d-flex justify-content-center mb-4"> Napisz do nas </h3>
- 	<form>
+ 	<form class="contact-form" action="contactform.php" method="post">
 	  <div class="form-group">
-	    <label class="labelsForContact" for="emailInput">e-mail</label>
-	    <input type="email" class="form-control smallMargin" id="emailInput" placeholder="nazwa@mail.com">
+	    <label class="labelsForContact" name="email" for="emailInput">e-mail</label>
+	    <input type="text" name="mail" class="form-control smallMargin" id="emailInput" placeholder="nazwa@mail.com">
 	  </div>
 	  <div class="form-group textFormat2">
-	    <label class="labelsForContact" for="exampleFormControlSelect1">Imię i nazwisko</label>
-	    <textarea class="form-control" id="name" rows="1"></textarea>
+	    <label class="labelsForContact" for="nameInput">Imię i nazwisko</label>
+	   <input type="text" name="name" class="form-control smallMargin" id="nameInput">
 	  </div>
 	  <div class="form-group textFormat2">
-	    <label class="labelsForContact" for="exampleFormControlTextarea1">Treść wiadomości</label>
-	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+	    <label class="labelsForContact" for="messageArea">Treść wiadomości</label>
+	    <textarea class="form-control" name="message" id="messageArea" rows="7"></textarea>
 	  </div>
+	   <div class="d-flex justify-content-end mb-5 mt-3 mb-md-0">
+						  	<button type="button" class="btn py-2 px-3 mr-1 mt-1"> Wyczyść </button>
+							<button type="submit" name="submit" class="btn py-2 px-3 ml-1 mt-1"> Wyślij </button>
+
+		</div>
 	</form>
  		</div>
  	</div>
@@ -78,10 +83,10 @@
 
 	</div>
 
-	   <footer class="page-footer page-footer2 pt-2">
+	   <footer class="page-footer page-footer2">
 		
 
-   <div class="container footer-copyright labelsForFooter mt-2">© 2018 Copyright:
+   <div class="container footer-copyright labelsForFooter">© 2018 Copyright:
       <a href="index.html"> <span class="labelsForFooter">F.H.P.U. Dashek</span></a>
     </div>
 
