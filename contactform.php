@@ -8,11 +8,12 @@ if (isset($_POST['submit'])) {
 
 	$subject = "Wiadomość ze strony internetowej";
 	$mailTo ="bwrobell@op.pl";
+
 	$headers = "Od: ".$mailFrom;
-	$txt = "Otrzymałeś wiadomość od ".$name ".\n\n".message; 
+	$txt = "Otrzymałeś wiadomość od ".$name.".\n\n".message; 
 
 	mail($mailTo, $subject, $txt, $headers);
-	header("Location: contact.html");
+	header("Location: contact.html?mailsend");
 }
 
 ?>
