@@ -21,11 +21,60 @@ body{
 	height: 140px;
 }
 
+.aboutUsPhoto{
+	width: 220px;
+	height: 160px;
+	border: 7px solid white;
+}
+
+.aboutUsPhoto2{
+	width: 0px;
+	height: 0px;
+	border:none;
+}
+
+
+@media only screen and (max-width: 768px){
+.nav-item{
+	background: #8f8674;
+	border-radius: 25px;
+}
+
+.nav-link{
+	width: 100%;
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+.borderFooter{
+	border-right: 1px solid #8f8674;
+}}
+
+
 @media only screen and (max-width: 991px){
 #logoIcon{
 	width: 160px;
 	height: 102px;
 }
+
+.aboutUsPhoto {
+	width: 160px;
+	height: 110px;
+	border: 5px solid white;
+}
+
+.aboutUsPhoto2{
+	width: 160px;
+	height: 110px;
+	border: 5px solid white;
+}
+
+
 } 
 
 @media only screen and (max-width: 767px){
@@ -33,6 +82,19 @@ body{
 	width: 120px;
 	height: 77px;
 }
+
+.aboutUsPhoto{
+	width: 0px;
+	height: 0px;
+	border: none;
+}
+
+.aboutUsPhoto2{
+	width: 0px;
+	height: 0px;
+	border:none;
+}
+
 } 
 
 .img-wrap{
@@ -90,9 +152,7 @@ h4{
 	text-align: center;
 }
 
-.borderFooter{
-	border-right: 1px solid #8f8674;
-}
+
 
 ul{
 	list-style-type: none;

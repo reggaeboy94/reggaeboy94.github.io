@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 	$txt ="Wiadomość od ".$name.".\n\n".$message;
 
 	mail($mailTo, $subject, $txt, $headers);
-	header("Location: contact.html");
+	header("Location: index.html");
 	
 }
 

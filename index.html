@@ -16,6 +16,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	
 	
 </head>
@@ -25,22 +26,22 @@
 	<div class="container">
 		<nav class="navbar navbar-expand-md">
 			<a href="index.html" class="navbar-brand"> <img src="images\logo_icon_fixed.png" id="logoIcon"> </a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navHeaderCollapse" aria-controls=".navHeaderCollapse" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
   			</button>
- 	 		<div class="collapse navbar-collapse" id="navbarNav">
-    			<ul class="navbar-nav ml-auto">
-      				<li class="nav-item active">
-       				 	<a class="nav-link" href="offer.html"><span class="topmenuitem">Oferta</span><span class="sr-only">(current)</span></a>
+ 	 		<div class="collapse navbar-collapse navHeaderCollapse">
+    			<ul class="nav navbar-nav ml-auto">
+      				<li class=" nav-item d-flex justify-content-center mb-1 ">
+       				 	<a class="nav-link d-flex justify-content-center" href="offer.html"><span class="topmenuitem">Oferta</span><span class="sr-only">(current)</span></a>
      				</li>
-	     			<li class="nav-item active">
-	      		 		<a class="nav-link" href="gallery.html"><span class="topmenuitem">Galeria</span></a>
+	     			<li class="nav-item d-flex justify-content-center mb-1">
+	      		 		<a class="nav-link d-flex justify-content-center" href="gallery.html"><span class="topmenuitem">Galeria</span></a>
 	   		 	    </li>
-	   		 	    <li class="nav-item active">
-	      		 		<a class="nav-link" href="aboutUs.html"><span class="topmenuitem">O nas</span></a>
+	   		 	    <li class="nav-item d-flex justify-content-center mb-1">
+	      		 		<a class="nav-link d-flex justify-content-center" href="aboutUs.html"><span class="topmenuitem">O nas</span></a>
 	   		 	    </li>
-	 		   	    <li class="nav-item active">
-	      		    <a class="nav-link" href="contact.html"><span class="topmenuitem">Kontakt</span></a>
+	 		   	    <li class="nav-item d-flex justify-content-center mb-1">
+	      		    <a class="nav-link d-flex justify-content-center" href="contact.html"><span class="topmenuitem">Kontakt</span></a>
 	     		 	</li>
 	   		    </ul>
 	   		</div>	 
@@ -48,7 +49,7 @@
 		
 		
 
-		<div class="dnSlide-main mt-5 mb-5 ml-auto mr-auto">
+		<div class="dnSlide-main mt-5 mb-5 mb-lg-2 mb-xl-5 ml-auto mr-auto">
 			<img src="images\photo1.jpg" >
 			<img src="images\photo2.jpg" >
 			<img src="images\photo1.jpg" >
@@ -85,9 +86,7 @@
 					<li class="mb-1 d-flex justify-content-center"> Ogrody zimowe </li>
 				</ul>
 				</div>
-					<!-- <div class="col-12 d-flex justify-content-end mt-3">
-						<button type="button" class="btn py-2 px-3 mr-1 mt-1"> Więcej >>> </button>
-					</div>	 -->
+					
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12 mb-5">
@@ -103,26 +102,26 @@
 	<footer class="page-footer pt-4">
 		 <div class="container text-center">
 		    <div class="row footer-content">
-       			<div class="col-md-8 borderFooter">
+       			<div class="col-12 col-md-8 borderFooter">
           		  	<h3 class=" mb-4 footerFontBig"> Napisz do nas </h3>
-          		  		<form>
+          		  		<form class="contact-form" method="post" action="contactform.php">
           		  		<div class="row">
           		  			<div class="col-md-6">
 						  <div class="form-group">
 						    <label class="labelsForFooter" for="emailInput">e-mail</label>
-						    <input type="email" class="form-control" id="emailInput" placeholder="nazwa@mail.com">
+						    <input type="email" name="mail" class="form-control" id="emailInput" placeholder="nazwa@mail.com" required>
 						  </div>
 						  <div class="form-group textFormat2">
-						    <label class="labelsForFooter mt-2" for="exampleFormControlSelect1">Imię i nazwisko</label>
-						    <textarea class="form-control" id="name" rows="1"></textarea>
+						    <label class="labelsForFooter mt-2" for="nameInput">Imię i nazwisko</label>
+						    <input type="text" name="name" class="form-control" id="nameInput" required></textarea>
 						  </div>
 						</div>
 						  <div class="col-md-6 form-group">
-						    <label class="labelsForFooter" for="exampleFormControlTextarea1">Treść wiadomości</label>
-						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+						    <label class="labelsForFooter" for="messageArea">Treść wiadomości</label>
+						    <textarea class="form-control" name="message" id="messageArea" rows="5"></textarea>
 						  </div>
 						  <div class="col-12 d-flex justify-content-end mb-5 mb-md-0">
-							<button type="button" class="btn py-2 px-3 ml-1 mt-1"> Wyślij </button>
+							<button type="submit" name="submit" class="btn py-2 px-3 ml-1 mt-1"> Wyślij </button>
 
 						  </div>
 						</div>
@@ -131,12 +130,12 @@
 						
 						</form>
                 </div>
-      		     <div class="col-md-4">
+      		     <div class="col-12 col-md-4">
             		<h3 class=" footerFontBig mb-5"> Menu </h3>
          			<ul class="pageText m-0 p-0">
 					<li class="mb-4"> <a class="footerFont" href="offer.html">Oferta</a></li>
 					<li class="mb-4">  <a class="footerFont" href="gallery.html">Galeria</a> </li>
-					<li class="mb-4"> <a class="footerFont" href="about.html">O nas</a>   </li>
+					<li class="mb-4"> <a class="footerFont" href="aboutUs.html">O nas</a>   </li>
 					<li class="mb-2"><a class="footerFont" href="contact.html">Kontakt</a> </li>
 				    </ul>
         		 </div>  
