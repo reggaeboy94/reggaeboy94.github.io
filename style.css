@@ -16,6 +16,25 @@ body{
 	background-size: cover;
 }
 
+#logoIcon{
+	width: 220px;
+	height: 140px;
+}
+
+@media only screen and (max-width: 991px){
+#logoIcon{
+	width: 160px;
+	height: 102px;
+}
+} 
+
+@media only screen and (max-width: 767px){
+#logoIcon{
+	width: 120px;
+	height: 77px;
+}
+} 
+
 .img-wrap{
 	background: white;
 }
