@@ -6,14 +6,15 @@ if (isset($_POST['submit'])) {
 	$message = $_POST['message'];
 
 
-	$subject = "Wiadomość ze strony internetowej";
+	$subject = "Wiadomość od ".$mailFrom;
 	$mailTo ="bwrobell@op.pl";
 
-	$headers = "Od: ".$mailFrom;
-	$txt = "Otrzymałeś wiadomość od ".$name.".\n\n".message; 
+	$headers = "Od: Dashek.pl";
+	$txt ="Wiadomość od ".$name.".\n\n".$message;
 
 	mail($mailTo, $subject, $txt, $headers);
-	header("Location: contact.html?mailsend");
+	header("Location: contact.html");
+	
 }
 
 ?>
